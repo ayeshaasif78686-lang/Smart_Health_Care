@@ -1,0 +1,36 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test:unit
+> node --test tests/core.test.js tests/demo-api.test.js
+
+✔ TC02 rejects a negative project budget (10.536711ms)
+✔ TC03 pending requirements never enter approved scope (1.823914ms)
+✔ TC04 approval updates budget duration and scope (2.232721ms)
+✔ TC05 repeated approval cannot apply twice (0.415989ms)
+✔ TC06 rejection preserves baseline (3.426025ms)
+✔ TC07 predecessor scheduling constraint (1.046957ms)
+✔ TC08 circular dependencies rejected (3.895862ms)
+✔ TC09 supplied EVM example warnings and zero denominators (1.330283ms)
+✔ TC10 invalid cost records rejected (1.451855ms)
+✔ TC11 critical unresolved defects included on dashboard (4.126797ms)
+✔ TC12 successful verification required to close defect (1.705903ms)
+✔ TC13 risk score bounds (4.921446ms)
+✔ TC16 dashboard matches underlying records (0.987071ms)
+✔ Historical EVM uses dated progress only (0.614261ms)
+✔ Forecast responds to overdue work and dependent tasks (1.801195ms)
+✔ Invalid references WBS cycles and invalid dates rejected (2.985082ms)
+✔ LOCAL TC01 creates and retrieves demo project (113.848457ms)
+✔ LOCAL TC14 data persists across adapter/API recreation (165.116992ms)
+✔ LOCAL TC15 unauthorized approval rejected (26.642248ms)
+✔ LOCAL atomic approval and double approval prevention (30.232743ms)
+✔ LOCAL invalid cost and referenced delete blocked (27.484147ms)
+✔ LOCAL login and protected endpoints (25.16049ms)
+✔ LOCAL risk CRUD and stale write rejection (38.967336ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1845.895482

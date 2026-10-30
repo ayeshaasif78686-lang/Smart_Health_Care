@@ -1,0 +1,112 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> npm test -w backend
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> node --test tests/*.test.js
+
+Starting the MongoMemoryServer Instance failed, enable debug log for more information. Error:
+ UnexpectedCloseError: Instance closed unexpectedly with code "100" and signal "null"
+    at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+    at ChildProcess.emit (node:events:514:28)
+    at maybeClose (node:internal/child_process:1172:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+✖ TC01 create and retrieve persisted project (472.513773ms)
+✖ TC14 data persists after API recreation and database reconnection (1.345102ms)
+✖ TC15 unauthorized user cannot approve changes (0.182714ms)
+✖ Concurrent approvals have exactly one winner (0.127483ms)
+✖ Invalid cost and deletion of referenced task rejected (0.195352ms)
+✖ Login and authentication (0.232009ms)
+✖ Risk CRUD persists create update and delete (0.054036ms)
+✔ TC02 rejects a negative project budget (9.782918ms)
+✔ TC03 pending requirements never enter approved scope (3.993442ms)
+✔ TC04 approval updates budget duration and scope (3.782513ms)
+✔ TC05 repeated approval cannot apply twice (0.816439ms)
+✔ TC06 rejection preserves baseline (5.507557ms)
+✔ TC07 predecessor scheduling constraint (0.884301ms)
+✔ TC08 circular dependencies rejected (1.78776ms)
+✔ TC09 supplied EVM example warnings and zero denominators (1.38516ms)
+✔ TC10 invalid cost records rejected (3.414392ms)
+✔ TC11 critical unresolved defects included on dashboard (5.492582ms)
+✔ TC12 successful verification required to close defect (4.354618ms)
+✔ TC13 risk score bounds (2.074096ms)
+✔ TC16 dashboard matches underlying records (2.716703ms)
+✔ Historical EVM uses dated progress only (0.750503ms)
+✔ Forecast responds to overdue work and dependent tasks (4.374145ms)
+✔ Invalid references WBS cycles and invalid dates rejected (6.761878ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 16
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2380.652789
+
+✖ failing tests:
+
+test at tests/api.test.js:6:1
+✖ TC01 create and retrieve persisted project (472.513773ms)
+  Error: Instance closed unexpectedly with code "100" and signal "null"
+      at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1172:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+
+test at tests/api.test.js:7:1
+✖ TC14 data persists after API recreation and database reconnection (1.345102ms)
+  Error: Instance closed unexpectedly with code "100" and signal "null"
+      at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1172:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+
+test at tests/api.test.js:8:1
+✖ TC15 unauthorized user cannot approve changes (0.182714ms)
+  Error: Instance closed unexpectedly with code "100" and signal "null"
+      at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1172:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+
+test at tests/api.test.js:9:1
+✖ Concurrent approvals have exactly one winner (0.127483ms)
+  Error: Instance closed unexpectedly with code "100" and signal "null"
+      at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1172:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+
+test at tests/api.test.js:10:1
+✖ Invalid cost and deletion of referenced task rejected (0.195352ms)
+  Error: Instance closed unexpectedly with code "100" and signal "null"
+      at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1172:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+
+test at tests/api.test.js:11:1
+✖ Login and authentication (0.232009ms)
+  Error: Instance closed unexpectedly with code "100" and signal "null"
+      at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1172:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+
+test at tests/api.test.js:12:1
+✖ Risk CRUD persists create update and delete (0.054036ms)
+  Error: Instance closed unexpectedly with code "100" and signal "null"
+      at MongoInstance.closeHandler (/workspace/scratch/33ef770fd81f/smart-healthcare-pms/node_modules/mongodb-memory-server-core/lib/util/MongoInstance.js:307:58)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1172:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:335:5)
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path /workspace/scratch/33ef770fd81f/smart-healthcare-pms/backend
+npm error workspace healthcare-api
+npm error location /workspace/scratch/33ef770fd81f/smart-healthcare-pms/backend
+npm error command failed
+npm error command sh -c node --test tests/*.test.js

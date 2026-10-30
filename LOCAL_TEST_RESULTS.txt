@@ -1,0 +1,58 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test:local
+> node --test backend/tests/core.test.js backend/tests/demo-api.test.js backend/tests/regression.test.js && npm test -w frontend
+
+✔ TC02 rejects a negative project budget (2.202194ms)
+✔ TC03 pending requirements never enter approved scope (0.768456ms)
+✔ TC04 approval updates budget duration and scope (0.859073ms)
+✔ TC05 repeated approval cannot apply twice (0.869218ms)
+✔ TC06 rejection preserves baseline (0.377748ms)
+✔ TC07 predecessor scheduling constraint (0.409827ms)
+✔ TC08 circular dependencies rejected (0.444709ms)
+✔ TC09 supplied EVM example warnings and zero denominators (0.238519ms)
+✔ TC10 invalid cost records rejected (0.552932ms)
+✔ TC11 critical unresolved defects included on dashboard (4.31894ms)
+✔ TC12 successful verification required to close defect (0.635587ms)
+✔ TC13 risk score bounds (2.436798ms)
+✔ TC16 dashboard matches underlying records (0.626452ms)
+✔ Historical EVM uses dated progress only (0.138067ms)
+✔ Forecast responds to overdue work and dependent tasks (0.219491ms)
+✔ Invalid references WBS cycles and invalid dates rejected (0.588225ms)
+✔ LOCAL TC01 creates and retrieves demo project (33.363616ms)
+✔ LOCAL TC14 data persists across adapter/API recreation (15.37447ms)
+✔ LOCAL TC15 unauthorized approval rejected (6.845654ms)
+✔ LOCAL atomic approval and double approval prevention (10.082816ms)
+✔ LOCAL invalid cost and referenced delete blocked (6.93625ms)
+✔ LOCAL login and protected endpoints (9.278745ms)
+✔ LOCAL risk CRUD and stale write rejection (11.928875ms)
+✔ Timestamp regression: legacy Mongoose document keeps original createdAt during approval (35.875597ms)
+✔ Nested progress-history changes are detected, timestamps alone are ignored (0.730309ms)
+✔ Proposed WBS cannot be scheduled, including bypass without change ID (0.802508ms)
+✔ Requirement hierarchy cycles rejected (0.369215ms)
+✔ Every module supports persistent create, update and delete (217.803068ms)
+✔ Approval then scheduled change work, quality closure and project plan persist (19.178626ms)
+✔ Malformed dates, duplicate team email and invalid project status are rejected (10.486263ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 586.981143
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> vitest run
+
+
+ RUN  v3.2.7 /workspace/scratch/dab47e833ca1/project/frontend
+
+ ✓ tests/forms.test.jsx (3 tests) 159ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  15:12:29
+   Duration  1.96s (transform 104ms, setup 0ms, collect 1.33s, tests 159ms, environment 266ms, prepare 60ms)
+

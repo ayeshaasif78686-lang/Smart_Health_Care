@@ -1,0 +1,25 @@
+{
+  "name": "smart-healthcare-pms",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w frontend",
+    "test": "npm test -w backend",
+    "seed": "npm run seed -w backend",
+    "start": "npm start -w backend",
+    "setup": "npm run setup -w backend",
+    "db:check": "npm run db:check -w backend",
+    "demo": "npm run build && npm run demo -w backend",
+    "test:db": "npm run test:db -w backend",
+    "docs:schema": "npm run docs:schema -w backend",
+    "seed:reset": "npm run seed:reset -w backend",
+    "test:local": "node --test backend/tests/core.test.js backend/tests/demo-api.test.js backend/tests/regression.test.js backend/tests/features.test.js && npm test -w frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,15 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> vitest run
+
+
+ RUN  v3.2.7 /workspace/scratch/33ef770fd81f/smart-healthcare-pms/frontend
+
+ ✓ tests/forms.test.jsx (3 tests) 385ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  17:31:02
+   Duration  9.56s (transform 375ms, setup 0ms, collect 6.49s, tests 385ms, environment 1.62s, prepare 244ms)
+

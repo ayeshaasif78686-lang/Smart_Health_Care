@@ -1,0 +1,42 @@
+SMART HEALTHCARE UPDATED BUILD: healthcare-fixed-2026-10-25
+
+ASAN RUN STEPS (MongoDB Atlas)
+1. Purane project ke terminals mein Ctrl+C karke server band karein.
+2. Yeh ZIP ek NAYE folder mein extract karein. Purane source files mix na karein.
+3. Purane backend/.env ko naye backend/.env mein copy karein.
+   Sirf .env copy karein, purana src ya node_modules nahi.
+4. START_FIXED.bat double-click karein. Pehli dafa internet chahiye (npm ci).
+5. Browser mein http://localhost:4000 open karein. Ctrl+F5 karein.
+6. Login: manager@healthcare.local
+   Password: aapka pehle wala password. Existing passwords preserve hote hain.
+   Naye database par backend/.env ka SEED_PASSWORD use hota hai.
+7. http://localhost:4000/api/health par build healthcare-fixed-2026-10-25
+   aur storage MongoDB dikhna chahiye. Dusra build dikhe to purana server chal raha hai.
+
+Agar .env nahi hai: setup Atlas URI poochhega aur password generate karega.
+MongoDB URI/password is ZIP mein include nahi hain.
+
+APPROVAL DEMO
+Change Requests > CR-001 > decision Approved > comments likhein > Confirm.
+Budget PKR 5,800,000 aur duration 19 weeks honge.
+Linked requirements/WBS Approved honge. Dobara approve allowed nahi.
+Schedule mein approved WBS aur same CR select karke AI/mobile tasks add karein.
+
+DATABASE
+Purana embedded project startup/seed par normalized collections mein migrate hota hai.
+Original project backup collection mein preserve hota hai.
+Existing normalized project/data seed dobara chalane se reset nahi hote.
+Database delete/reset karne ki zaroorat nahi.
+
+TESTS
+npm run test:local   = 30 backend checks + 3 frontend checks
+npm run test:db      = real MongoDB replica-set integration tests
+npm run db:check     = connected database collection counts
+npm run dev          = development mode (frontend port 5173)
+
+VERIFICATION LIMIT
+Local tests and production build passed here. The execution environment blocked
+MongoDB startup with 'open: Operation not permitted'. Real Atlas/replica-set
+integration tests could not be completed here. Read FIXES_AND_TESTS.md.
+
+START_DEMO.bat is an optional JSON demo, not the MongoDB submission mode.
